@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mis Vacaciones</title>
+
+    <!-- Conecta el diseño -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="contenedor">
+
+        <!-- TÍTULO -->
+        <h1>🌸 Mis Vacaciones 🌸</h1>
+
+        <!-- BOTONES -->
+        <div class="botones">
+            <button onclick="mostrarSemana1()">Semana 1</button>
+            <button onclick="mostrarSemana2()">Semana 2</button>
+        </div>
+
+        <!-- CONTENIDO DINÁMICO -->
+        <div id="contenido" class="contenido">
+            <p>Da clic en un botón para ver mis actividades 💗</p>
+        </div>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        function mostrarSemana1() {
+            document.getElementById("contenido").innerHTML = `
+                <h2>💖 Semana 1</h2>
+                <ul>
+                    <li>Realicé mis quehaceres del hogar y apoyé en casa.</li>
+                    <li>Conviví con mi familia en cenas navideñas y reuniones.</li>
+                    <li>Asistí a misa y aprendí a valorar más a mi familia.</li>
+                    <li>Salí de compras con mi mamá y pasamos tiempo juntas.</li>
+                </ul>
+                <img src="img/familia.jpg">
+            `;
+        }
+
+        function mostrarSemana2() {
+            document.getElementById("contenido").innerHTML = `
+                <h2>🌷 Semana 2</h2>
+                <ul>
+                    <li>Practiqué piano diariamente para mejorar mis habilidades.</li>
+                    <li>Leí libros que me dejaron grandes aprendizajes.</li>
+                    <li>Remodelé mi cuarto y lo acomodé a mi gusto.</li>
+                    <li>Estuve más tiempo con mi mamá y la apoyé en casa.</li>
+                    <li>Participé por primera vez en una cosecha.</li>
+                </ul>
+                <img src="img/yo.jpg">
+            `;
+        }
+    </script>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>
+            🌸 Nombre: Fernanda Donaciano Martínez |
+            Grupo: 503 |
+            Fecha: 7 de enero de 2026 🌸
+        </p>
+    </footer>
+
+</body>
+</html>
